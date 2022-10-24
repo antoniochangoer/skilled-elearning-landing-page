@@ -17,6 +17,7 @@
     --fs-h-l: 4rem;
     --fs-h-ml: 3.2rem;
     --fs-h-sl: 2.4rem;
+    --fs-h-ex-sl: 2rem;
     --fs-b-m: 1.8rem;
     --fs-b-s: 1.6rem;
     --fw-m: 500;
@@ -127,6 +128,8 @@ nav {
     margin-bottom: 2.6rem;
 }
 
+/* MORGEN HIER VERDER MEEGAAN!!! CHECK grid? */
+
 .courses-section {
     background: var(--clr-neutral-lg-w);
 }
@@ -139,7 +142,7 @@ nav {
     background: var(--clr-primary-lg-pink);
     padding: 2.4rem 2.8rem;
     border-radius: 10px;
-    margin-bottom: 1.6rem;
+    margin-bottom: 4rem;
 }
 
 .course-alert-title {
@@ -149,17 +152,25 @@ nav {
 }
 
 .course-card {
+    position: relative;
     background: var(--clr-neutral-w);
     border-radius: 10px;
     padding: 8rem 2.5rem;
 }
 
+.course-card:not(:last-child) {
+    margin-bottom: 4rem;
+}
+
 .course-icon {
+    position: absolute;
+    top: -25px;
 
 }
 
 .course-title {
-
+    font-weight: var(--fw-eb);
+    font-size: var(--fs-h-ex-sl);
 }
 
 .course-title {
@@ -177,3 +188,5 @@ nav {
 footer {
     background: var(--clr-neutral-db);
 }
+
+/* Vergeet html niet te checken voor alt teksten etc sementics */
