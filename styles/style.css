@@ -61,7 +61,7 @@
     overflow-wrap: break-word;
 }
 
-h1, h4 {
+h1, h3 {
     color: var(--clr-neutral-db);
 }
 
