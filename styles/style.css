@@ -84,7 +84,7 @@ header {
     margin-bottom: 3.8rem;
 }
 
-nav {
+.nav {
     display: flex;
     align-items: center;
     justify-content: space-between;
