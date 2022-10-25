@@ -9,29 +9,31 @@
   <title>Skilled e-learning landing page</title>
 </head>
 <body>
-  <header class="container">
-    <nav class="nav">
-      <a href="#" class="nav-logo">
-        <img class="logo-dark" src="./assets/logo-dark.svg" alt="#" class="logo">
-      </a>
-      <button class="btn btn-dark">Get Started</button>
-    </nav>
-  </header>
   <main>
-    <section class="hero-section container">
-      <div class="hero-section-content">
-        <h1 class="hero-section-title">Maximize skill, minimize budget</h1>
-        <p class="hero-section-text">Our modern courses across a range of in-demand skills will give you the knowledge you need to live the life you want.</p>
-        <button class="btn btn-pink">Get Started</button>
-      </div>
-      <picture>
-        <source srcset="./assets/image-hero-mobile.webp" media="(max-width: 767px)">
-        <source srcset="./assets/image-hero-tablet.webp" media="(max-width: 1340px)">
-        <!-- DESKTOP FIXEN  -->
-        <!-- <source srcset="./assets/image-hero-desktop.webp" media="(min-width: 1440px)"> -->
-        <img src="./assets/image-hero-desktop.webp" alt="" class="hero-section-img">
-      </picture>
-    </section>
+  <div class="wrapper">
+    <header class="container">
+      <nav class="nav">
+        <a href="#" class="nav-logo">
+          <img class="logo-dark" src="./assets/logo-dark.svg" alt="#" class="logo">
+        </a>
+        <button class="btn btn-dark">Get Started</button>
+      </nav>
+    </header>
+      <section class="hero-section container">
+        <div class="hero-section-content">
+          <h1 class="hero-section-title">Maximize skill, minimize budget</h1>
+          <p class="hero-section-text">Our modern courses across a range of in-demand skills will give you the knowledge you need to live the life you want.</p>
+          <button class="btn btn-pink">Get Started</button>
+        </div>
+        <picture class="hero-image">
+          <source srcset="./assets/image-hero-mobile.webp" media="(max-width: 767px)">
+          <source srcset="./assets/image-hero-tablet.webp" media="(max-width: 1400px)">
+          <!-- DESKTOP FIXEN  -->
+          <!-- <source srcset="./assets/image-hero-desktop.webp" media="(min-width: 1440px)"> -->
+          <img src="./assets/image-hero-desktop.webp" alt="" class="hero-section-img">
+        </picture>
+      </section>
+  </div>
     <section class="courses-section">
       <div class="courses container">
         <div class="course-alert">

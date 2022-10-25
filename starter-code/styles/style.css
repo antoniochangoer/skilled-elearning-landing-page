@@ -69,8 +69,15 @@ p {
     color: var(--clr-neutral-lg);
 }
 
+.wrapper {
+    position: relative;
+    overflow: hidden;
+}
+
 .container {
-    max-width: min(111rem, 90%);
+    /* max-width: min(111rem, 90%); */
+    /* max-width: min(111rem, 92%); */
+    max-width: 92%;
     margin-inline: auto;
 }
 
@@ -192,14 +199,36 @@ footer {
     background: var(--clr-neutral-db);
 }
 
+.hero-image {
+
+}
+
 @media (min-width: 768px) {
+    img, picture, video, canvas, svg {
+        max-width: none;
+    }
+
+    .container {
+        max-width: 68rem;
+        margin-inline: auto;
+    }
+
     .hero-section {
         display: flex;
         align-items: center;
+        min-height: 50vh;
+        padding: 15rem 0;
     }
 
     .hero-section-content {
         margin-bottom: 0;
+        max-width: 40rem;
+    }
+
+    .hero-image {
+        position: absolute;
+        top: -5.213rem;
+        right: -30.771rem;
     }
 
     .courses {
@@ -219,11 +248,52 @@ footer {
     }
 }
 
-@media (min-width: 1439px) {
+@media (min-width: 1400px) {
+    img, picture, video, canvas, svg {
+        max-width: none;
+    }
+    
+    body {
+        font-size: var(--fs-b-m);
+    }
+    .container {
+        max-width: 111rem;
+        margin-inline: auto;
+    }
+
+
+    .hero-section-content {
+        margin-bottom: 0;
+        max-width: 45.7rem;
+    }
+
+    .hero-image {
+        position: absolute;
+        top: -15.213rem;
+        right: -30.771rem;
+    }
+
+    .course-alert-title {
+        font-size: var(--fs-h-ml);
+        max-width: 28rem;
+    }
+
+    .course-title {
+        font-size: var(--fs-h-sl);
+    }
+
+    .hero-section-title {
+        font-size: var(--fs-h-xl);
+    }
+
+    .hero-section-text {
+        font-size: var(--fs-b-m);
+    }
     .courses {
         display: grid;
         grid-template-columns: repeat(3, 1fr);
     }
+
 }
 
 /* Vergeet html niet te checken voor alt teksten etc sementics */
