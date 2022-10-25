@@ -75,8 +75,6 @@ p {
 }
 
 .container {
-    /* max-width: min(111rem, 90%); */
-    /* max-width: min(111rem, 92%); */
     max-width: 92%;
     margin-inline: auto;
 }
@@ -90,10 +88,8 @@ nav {
     display: flex;
     align-items: center;
     justify-content: space-between;
-}
-
-.nav-logo {
-
+    z-index: 99;
+    position: relative;
 }
 
 .btn {
@@ -103,6 +99,7 @@ nav {
     padding: 1.1rem 2.4rem;
     font-weight: var(--fw-m);
     color: var(--clr-neutral-w);
+    transition: all .2s ease-in-out;
 }
 
 .btn-dark {
@@ -132,15 +129,9 @@ nav {
     margin-bottom: 2.6rem;
 }
 
-/* MORGEN HIER VERDER MEEGAAN!!! CHECK grid? */
-
 .courses-section {
     background: var(--clr-neutral-lg-w);
     padding: 6rem 0;
-}
-
-.courses {
-
 }
 
 .course-alert {
@@ -158,6 +149,9 @@ nav {
 
 .course-card {
     position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
     background: var(--clr-neutral-w);
     border-radius: 10px;
     padding: 0 2.5rem 4rem;
@@ -197,10 +191,6 @@ nav {
 footer {
     padding: 3.6rem 1.6rem;
     background: var(--clr-neutral-db);
-}
-
-.hero-image {
-
 }
 
 @media (min-width: 768px) {
@@ -252,7 +242,7 @@ footer {
     img, picture, video, canvas, svg {
         max-width: none;
     }
-    
+
     body {
         font-size: var(--fs-b-m);
     }
@@ -261,6 +251,14 @@ footer {
         margin-inline: auto;
     }
 
+    .btn-dark:hover {
+        background-color: #666CA3;
+    }
+    
+    .btn-pink:hover,
+    .btn-purple:hover {
+    opacity: .5;
+    }
 
     .hero-section-content {
         margin-bottom: 0;
@@ -273,6 +271,12 @@ footer {
         right: -30.771rem;
     }
 
+    .courses {
+        grid-template-columns: repeat(3, 1fr);
+        row-gap: 5.6rem;
+        column-gap: 3rem;
+    }
+
     .course-alert-title {
         font-size: var(--fs-h-ml);
         max-width: 28rem;
@@ -282,6 +286,10 @@ footer {
         font-size: var(--fs-h-sl);
     }
 
+    .course-link:hover {
+        color: var(--clr-primary-light-pink);
+    }    
+
     .hero-section-title {
         font-size: var(--fs-h-xl);
     }
@@ -289,11 +297,5 @@ footer {
     .hero-section-text {
         font-size: var(--fs-b-m);
     }
-    .courses {
-        display: grid;
-        grid-template-columns: repeat(3, 1fr);
-    }
 
 }
-
-/* Vergeet html niet te checken voor alt teksten etc sementics */
