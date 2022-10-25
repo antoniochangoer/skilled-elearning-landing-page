@@ -24,7 +24,13 @@
         <p class="hero-section-text">Our modern courses across a range of in-demand skills will give you the knowledge you need to live the life you want.</p>
         <button class="btn btn-pink">Get Started</button>
       </div>
-      <img src="./assets/image-hero-mobile.webp" alt="" class="hero-section-img">
+      <picture>
+        <source srcset="./assets/image-hero-mobile.webp" media="(max-width: 767px)">
+        <source srcset="./assets/image-hero-tablet.webp" media="(max-width: 1340px)">
+        <!-- DESKTOP FIXEN  -->
+        <!-- <source srcset="./assets/image-hero-desktop.webp" media="(min-width: 1440px)"> -->
+        <img src="./assets/image-hero-desktop.webp" alt="" class="hero-section-img">
+      </picture>
     </section>
     <section class="courses-section">
       <div class="courses container">
@@ -75,42 +81,12 @@
     </section>
   </main>
   <footer>
-    <nav class="nav">
+    <nav class="nav container">
       <a href="#" class="nav-logo">
         <img class="logo-light" src="./assets/logo-light.svg" alt="#" class="logo">
       </a>
       <button class="btn btn-purple">Get Started</button>
     </nav>
   </footer>
-
-  
-
-  
-
-
-
-
-  
-
-  
-
-
-
-  
-
-  
-
-  
-
-
-
-
-
-
-  
-
-
-
-
 </body>
 </html>
