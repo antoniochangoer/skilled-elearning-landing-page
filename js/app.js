@@ -1,6 +1,6 @@
 const tl = gsap.timeline({
     defaults: {
-        duration: 0.75,
+        duration: 0.8,
         ease: 'power1.out'
     }
 });
